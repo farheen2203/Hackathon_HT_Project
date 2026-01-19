@@ -1,0 +1,754 @@
+{
+  "name": "My workflow 3",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw",
+          "mode": "list",
+          "cachedResultName": "ID proofs",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Passport",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Passport Number": "={{ $json.passportNumber }}",
+            "Surname": "={{ $json.surname }}",
+            "Given Name": "={{ $json.givenName }}",
+            "Date Of Birth": "={{ $json.dateOfBirth }}",
+            "Place Of Issue": "={{ $json.placeOfIssue }}",
+            "Date Of Issue": "={{ $json.dateOfIssue }}",
+            "Date Of Expiry": "={{ $json.dateOfExpiry }}",
+            "Nationality": "={{ $json.nationality }}",
+            "Father Name": "={{ $json.fatherName }}",
+            "Mother Name": "={{ $json.motherName }}",
+            "Spouse Name": "={{ $json.spouseName }}",
+            "Address": "={{ $json.address }}",
+            "Old Passport Number": "={{ $json.oldPassportNumber }}",
+            "File Number": "={{ $json.fileNumber }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Passport Number",
+              "displayName": "Passport Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Surname",
+              "displayName": "Surname",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Given Name",
+              "displayName": "Given Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date Of Birth",
+              "displayName": "Date Of Birth",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Place Of Issue",
+              "displayName": "Place Of Issue",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date Of Issue",
+              "displayName": "Date Of Issue",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date Of Expiry",
+              "displayName": "Date Of Expiry",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Nationality",
+              "displayName": "Nationality",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Father Name",
+              "displayName": "Father Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Mother Name",
+              "displayName": "Mother Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Spouse Name",
+              "displayName": "Spouse Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Address",
+              "displayName": "Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Old Passport Number",
+              "displayName": "Old Passport Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "File Number",
+              "displayName": "File Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Raw Text",
+              "displayName": "Raw Text",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1104,
+        64
+      ],
+      "id": "8820472d-790c-4417-8727-d21a15769394",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "AwOpAT6ydAx5fDgw",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "507c0d01-3d7c-4006-9e53-89d901b84477",
+                    "leftValue": "={{ $json.documentType }}",
+                    "rightValue": "PASSPORT",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "6cef74d7-fb5e-4d2f-8e9e-40409c0c8677",
+                    "leftValue": "={{ $json.documentType }}",
+                    "rightValue": "PAN",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "7077b5e0-8333-471b-a0f5-2b5f6c413a02",
+                    "leftValue": "={{ $json.id_type }}",
+                    "rightValue": "aadhar",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "8e1e7c58-3472-42cb-b64a-fbfba63341df",
+                    "leftValue": "={{ $json.id_type }}",
+                    "rightValue": "voter",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        880,
+        256
+      ],
+      "id": "78f51b05-c691-4b3d-bffa-e8149b0930a8",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw",
+          "mode": "list",
+          "cachedResultName": "ID proofs",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1172880601,
+          "mode": "list",
+          "cachedResultName": "PAN Card",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit#gid=1172880601"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "PAN Number": "={{ $json.panNumber }}",
+            "Name": "={{ $json.name }}",
+            "Father Name": "={{ $json.fatherName }}",
+            "Date of Birth ": "={{ $json.dateOfBirth }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "PAN Number",
+              "displayName": "PAN Number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Father Name",
+              "displayName": "Father Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Date of Birth ",
+              "displayName": "Date of Birth ",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1216,
+        256
+      ],
+      "id": "701cb979-4361-42eb-8b8c-9b87b642aa29",
+      "name": "Append row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "AwOpAT6ydAx5fDgw",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw",
+          "mode": "list",
+          "cachedResultName": "ID proofs",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1818964444,
+          "mode": "list",
+          "cachedResultName": "Aadhar Card",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qgVNyHjtIdQA3grm6myKQwUlhMlww4Ob9-BT2EEVVFw/edit#gid=1818964444"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Aadhar Card": "={{ $json.aadhaarNumber }}",
+            "Name": "={{ $json.name }}",
+            "Date of Birth": "={{ $json.dateOfBirth }}",
+            "Gender": "={{ $json.gender }}",
+            "Address": "={{ $json.pincode }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "Aadhar Card",
+              "displayName": "Aadhar Card",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Name",
+              "displayName": "Name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Date of Birth",
+              "displayName": "Date of Birth",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Gender",
+              "displayName": "Gender",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Address",
+              "displayName": "Address",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1232,
+        416
+      ],
+      "id": "7582ea0a-a5a8-4296-916f-28f539bc08c6",
+      "name": "Append row in sheet2",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "AwOpAT6ydAx5fDgw",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kyc/parse-document",
+        "options": {
+          "binaryPropertyName": "file"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1568,
+        240
+      ],
+      "id": "99291695-45b5-4706-aa80-2a1c56ac24fd",
+      "name": "Webhook",
+      "webhookId": "d7e039bc-f9bb-47b6-9508-7ec4a237d3d0"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Access binary directly from Webhook\nconst binaryFile = $binary?.file0 || $binary?.file;\n\nif (!binaryFile) {\n  throw new Error(\"Binary file missing. Trigger workflow via Webhook upload.\");\n}\n\n// Get user_id - make sure it's a valid UUID\nconst user_id = $json.query?.user_id || \n                $json.body?.user_id || \n                $json.user_id ||\n                \"11111111-1111-1111-1111-111111111111\";  // Valid UUID format\n\nconst id_type = $json.query?.id_type || \n                $json.body?.id_type || \n                $json.id_type ||\n                \"passport\";\n\nreturn {\n  json: {\n    user_id,\n    id_type,\n    source: \"n8n\"\n  },\n  binary: {\n    data: binaryFile\n  }\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -1168,
+        240
+      ],
+      "id": "807f8d71-f2a2-48cb-ae47-7534e1eef393",
+      "name": "Code in JavaScript2"
+    },
+    {
+      "parameters": {
+        "jsCode": "// =====================================================\n// 1. READ OCR TEXT (ALL ITEMS + ALL PAGES)\n// =====================================================\nconst allItems = $input.all();\nlet fullText = \"\";\n\nfor (const item of allItems) {\n  const json = item.json;\n\n  if (Array.isArray(json.ParsedResults)) {\n    fullText += json.ParsedResults.map(r => r.ParsedText || \"\").join(\"\\n\") + \"\\n\";\n  }\n\n  if (Array.isArray(json.pages)) {\n    fullText += json.pages.map(p => p.markdown || \"\").join(\"\\n\") + \"\\n\";\n  }\n}\n\nfullText = fullText.replace(/\\r/g, \"\").replace(/\\s{2,}/g, \" \").trim();\n\nif (!fullText) {\n  return { json: { documentType: \"UNKNOWN\", status: \"error\", message: \"No OCR text found\" } };\n}\n\n// =====================================================\n// 2. HELPERS\n// =====================================================\nfunction extractField(patterns) {\n  for (const pattern of patterns) {\n    const match = fullText.match(pattern);\n    if (match && match[1]) {\n      return match[1].trim();\n    }\n  }\n  return null;\n}\n\nfunction extractAllDates() {\n  const formats = [\n    /\\b(\\d{2}\\/\\d{2}\\/\\d{4})\\b/g,\n    /\\b(\\d{2}-\\d{2}-\\d{4})\\b/g,\n    /\\b(\\d{2}\\.\\d{2}\\.\\d{4})\\b/g,\n    /\\b(\\d{2}\\s+\\d{2}\\s+\\d{4})\\b/g\n  ];\n  \n  let dates = [];\n  for (const format of formats) {\n    const matches = fullText.matchAll(format);\n    for (const match of matches) {\n      dates.push(match[1].replace(/[\\s.-]/g, '/'));\n    }\n  }\n  return [...new Set(dates)];\n}\n\n// =====================================================\n// 3. DOCUMENT TYPE DETECTION\n// =====================================================\nfunction detectDocumentType(text) {\n  if (/REPUBLIC OF INDIA|PASSPORT/i.test(text)) return \"PASSPORT\";\n  if (/INCOME TAX DEPARTMENT|PERMANENT ACCOUNT NUMBER|PAN/i.test(text)) return \"PAN\";\n  if (/ELECTION COMMISSION|VOTER|ELECTOR/i.test(text)) return \"VOTER\";\n  if (/AADHAAR|AADHAR|UID|UNIQUE IDENTIFICATION/i.test(text)) return \"AADHAR\";\n  return \"UNKNOWN\";\n}\n\n// =====================================================\n// 4. PAN CARD PARSER (UPDATED)\n// =====================================================\nfunction parsePAN(text) {\n  // PAN Number - most reliable field\n  const panNumber = extractField([\n    /Permanent\\s*Account\\s*Number\\s*[:\\-]?\\s*([A-Z]{5}\\d{4}[A-Z])/i,\n    /PAN\\s*[:\\-]?\\s*([A-Z]{5}\\d{4}[A-Z])/i,\n    /\\b([A-Z]{5}\\d{4}[A-Z])\\b/\n  ]);\n  \n  // Date of Birth - extract first\n  const allDates = extractAllDates();\n  const dateOfBirth = allDates.length > 0 ? allDates[0] : null;\n  \n  // Try labeled extraction first (for cards with \"Name\" and \"Father's Name\" labels)\n  let name = extractField([\n    /नाम\\s*\\/\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?=\\s*(?:\\n|पिता|Father|Date|DOB|जन्म))/is,\n    /Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?=\\s*(?:\\n|Father|Date|DOB|पिता))/is\n  ]);\n  \n  let fatherName = extractField([\n    /पिता\\s*का\\s*नाम\\s*\\/\\s*Father'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?=\\s*(?:\\n|Date|DOB|जन्म))/is,\n    /Father'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?=\\s*(?:\\n|Date|DOB|जन्म))/is\n  ]);\n  \n  // If labeled extraction didn't work, fall back to line-by-line parsing\n  if (!name || !fatherName) {\n    const lines = text.split(/\\n+/).map(line => line.trim()).filter(line => line.length > 0);\n    const possibleNames = [];\n    \n    for (const line of lines) {\n      // Skip lines with these keywords\n      if (/INCOME|TAX|DEPARTMENT|GOVT|INDIA|PERMANENT|ACCOUNT|NUMBER|SIGNATURE|IMG|आयकर|विभाग|भारत|सरकार|स्थायी|लेखा|संख्या|कार्ड|हस्ताक्षर/i.test(line)) {\n        continue;\n      }\n      \n      // Skip lines that are just dates or PAN numbers\n      if (/^\\d{2}\\/\\d{2}\\/\\d{4}$/.test(line) || /^[A-Z]{5}\\d{4}[A-Z]$/.test(line) || /^\\d{8}$/.test(line)) {\n        continue;\n      }\n      \n      // Check if line has 2-4 words that start with capital letter (names)\n      const words = line.split(/\\s+/);\n      const looksLikeName = words.length >= 2 && \n                           words.length <= 4 && \n                           words.every(word => /^[A-Z]/.test(word) && word.length >= 2);\n      \n      if (looksLikeName) {\n        possibleNames.push(line);\n      }\n    }\n    \n    // Remove duplicates\n    const uniqueNames = [...new Set(possibleNames)];\n    \n    // Use fallback values only if not already found\n    if (!name && uniqueNames.length > 0) {\n      name = uniqueNames[0];\n    }\n    if (!fatherName && uniqueNames.length > 1) {\n      fatherName = uniqueNames[1];\n    }\n  }\n  \n  return {\n    documentType: \"PAN\",\n    panNumber: panNumber,\n    name: name,\n    fatherName: fatherName,\n    dateOfBirth: dateOfBirth,\n    rawText: fullText\n  };\n}\n\n// =====================================================\n// 5. VOTER CARD PARSER\n// =====================================================\nfunction parseVoter(text) {\n  const voterId = extractField([\n    /EPIC\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([A-Z]{3}\\d{7})/i,\n    /Elector'?s?\\s*Photo\\s*Identity\\s*Card\\s*[:\\-]?\\s*([A-Z]{3}\\d{7})/i,\n    /Voter\\s*ID\\s*[:\\-]?\\s*([A-Z]{3}\\d{7})/i,\n    /ID\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([A-Z]{3}\\d{7})/i,\n    /\\b([A-Z]{3}\\d{7})\\b/\n  ]);\n  \n  const name = extractField([\n    /Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Father|Husband|Mother|Age|DOB|Sex|Gender))/is,\n    /Elector'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*\\n)/is,\n    /\\n([A-Z][A-Z\\s]{5,}?)(?=\\s*\\n)/\n  ]);\n  \n  const fatherName = extractField([\n    /Father'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Mother|Husband|Age|DOB))/is,\n    /Father\\s*[:\\-]\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*\\n)/is,\n    /Father[:\\s]+([A-Z]+(?:\\s+[A-Z]+)*)/i\n  ]);\n  \n  const husbandName = extractField([\n    /Husband'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Age|DOB|Address))/is,\n    /Husband\\s*[:\\-]\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*\\n)/is\n  ]);\n  \n  const allDates = extractAllDates();\n  const dateOfBirth = extractField([\n    /Date\\s*of\\s*Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /DOB\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i\n  ]) || allDates[0];\n  \n  const age = extractField([\n    /Age\\s*[:\\-]?\\s*(\\d{2,3})/i,\n    /Age[:\\s]+(\\d{2,3})/\n  ]);\n  \n  const gender = extractField([\n    /Sex\\s*[:\\-]?\\s*(Male|Female|MALE|FEMALE|M|F)/i,\n    /Gender\\s*[:\\-]?\\s*(Male|Female|MALE|FEMALE|M|F)/i\n  ]);\n  \n  const address = extractField([\n    /Address\\s*[:\\-]?\\s*(.*?PIN[:\\s]*\\d{6})/is,\n    /Address\\s*[:\\-]?\\s*(.*?)(?:\\n\\n|EPIC|Voter)/is,\n    /Address\\s*[:\\-]?\\s*([A-Z0-9].*?(?:\\d{6}))/is\n  ]);\n  \n  return {\n    documentType: \"VOTER\",\n    voterId: voterId,\n    name: name,\n    fatherName: fatherName,\n    husbandName: husbandName,\n    dateOfBirth: dateOfBirth?.replace(/[\\s.-]/g, '/'),\n    age: age,\n    gender: gender,\n    address: address,\n    rawText: fullText\n  };\n}\n\n// =====================================================\n// 6. AADHAR CARD PARSER\n// =====================================================\nfunction parseAadhar(text) {\n  const aadhaarNumber = extractField([\n    /Aadhaar\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([\\dXx\\s]{12,17})/i,\n    /Aadhar\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([\\dXx\\s]{12,17})/i,\n    /UID\\s*[:\\-]?\\s*([\\dXx\\s]{12,17})/i,\n    /\\b(\\d{4}\\s?\\d{4}\\s?\\d{4})\\b/,\n    /\\b([\\dXx]{4}\\s?[\\dXx]{4}\\s?[\\dXx]{4})\\b/\n  ]);\n  \n  const name = extractField([\n    /Name\\s*[:\\-]?\\s*([A-Z][A-Za-z\\s]{2,}?)(?=\\s*(?:\\n|DOB|Date|Birth|Father|Gender|Male|Female))/is,\n    /\\n([A-Z][A-Za-z\\s]{5,}?)(?=\\s*\\n)/,\n    /([A-Z][a-z]+(?:\\s[A-Z][a-z]+)+)/\n  ]);\n  \n  const allDates = extractAllDates();\n  const dateOfBirth = extractField([\n    /Date\\s*of\\s*Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /DOB\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Year\\s*of\\s*Birth\\s*[:\\-]?\\s*(\\d{4})/i,\n    /YOB\\s*[:\\-]?\\s*(\\d{4})/i\n  ]) || allDates[0];\n  \n  const gender = extractField([\n    /Gender\\s*[:\\-]?\\s*(Male|Female|MALE|FEMALE|M|F|Transgender)/i,\n    /Sex\\s*[:\\-]?\\s*(Male|Female|MALE|FEMALE|M|F)/i,\n    /(Male|Female|MALE|FEMALE)/i\n  ]);\n  \n  const address = extractField([\n    /Address\\s*[:\\-]?\\s*(.*?PIN[:\\s]*\\d{6})/is,\n    /Address\\s*[:\\-]?\\s*(.*?)(?:\\n\\n|Aadhaar|Aadhar)/is,\n    /((?:S\\/O|D\\/O|W\\/O|C\\/O).*?\\d{6})/is,\n    /Address.*?([A-Z0-9].*?\\d{6})/is\n  ]);\n  \n  const pincode = extractField([\n    /PIN\\s*Code\\s*[:\\-]?\\s*(\\d{6})/i,\n    /PIN\\s*[:\\-]?\\s*(\\d{6})/i,\n    /Pincode\\s*[:\\-]?\\s*(\\d{6})/i,\n    /\\b(\\d{6})\\b/\n  ]);\n  \n  const fatherName = extractField([\n    /Father'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Za-z\\s]{2,}?)(?=\\s*\\n)/is,\n    /S\\/O\\s*[:\\-]?\\s*([A-Z][A-Za-z\\s]{2,}?)(?=\\s*\\n)/is\n  ]);\n  \n  return {\n    documentType: \"AADHAR\",\n    aadhaarNumber: aadhaarNumber?.replace(/\\s/g, \"\"),\n    name: name,\n    dateOfBirth: dateOfBirth?.replace(/[\\s.-]/g, '/'),\n    gender: gender,\n    address: address,\n    pincode: pincode,\n    fatherName: fatherName,\n    rawText: fullText\n  };\n}\n\n// =====================================================\n// 7. PASSPORT PARSER (UNCHANGED)\n// =====================================================\nfunction parsePassport(text) {\n  const allDates = extractAllDates();\n  \n  const passportNumber = extractField([\n    /Passport\\s*No\\.?\\s*[:\\-]?\\s*([A-Z]\\s?\\d{7,8})/i,\n    /\\b([A-Z]\\d{7,8})\\b/,\n    /P\\s*No\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i,\n    /No\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i\n  ])?.replace(/\\s/g, \"\");\n  \n  const surname = extractField([\n    /Surname\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,30}?)(?:\\n|Given|Name\\s*of|Date|Sex|Place)/i,\n    /Surname\\s*[:\\-]?\\s*([A-Z]+)/i,\n    /Sur\\s*name\\s*[:\\-]?\\s*([A-Z]+)/i,\n    /\\bSurname[:\\s]+([A-Z]+)/i\n  ]);\n  \n  const givenName = extractField([\n    /Given\\s*Name\\(s\\)?\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,50}?)(?:\\n|Date|Sex|Place|Surname|Father|Mother)/i,\n    /Given\\s*Name\\s*[:\\-]?\\s*([A-Z\\s]+)/i,\n    /Name\\(s\\)\\s*[:\\-]?\\s*([A-Z\\s]+)/i,\n    /\\bName[:\\s]+([A-Z\\s]{3,}?)(?:\\n|Date)/i\n  ]);\n  \n  const dateOfBirth = extractField([\n    /Date\\s*of\\s*Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Birth\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /DOB\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i\n  ]) || allDates[0];\n  \n  const dateOfIssue = extractField([\n    /Date\\s*of\\s*Issue\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Issue\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /DOI\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Issued?\\s*on\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i\n  ]) || allDates[1];\n  \n  const dateOfExpiry = extractField([\n    /Date\\s*of\\s*Expiry\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Expiry\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Expir(?:y|es)\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /DOE\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i,\n    /Valid\\s*till\\s*[:\\-]?\\s*(\\d{2}[\\s\\/\\-\\.]\\d{2}[\\s\\/\\-\\.]\\d{4})/i\n  ]) || allDates[2];\n  \n  const placeOfIssue = extractField([\n    /Place\\s*of\\s*Issue\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?:\\n|Date|File)/i,\n    /Issue\\s*Place\\s*[:\\-]?\\s*([A-Z][A-Z\\s]+?)(?:\\n|Date)/i,\n    /(KOLKATA|DELHI|MUMBAI|CHENNAI|HYDERABAD|BENGALURU|BANGALORE|PUNE|AHMEDABAD|LUCKNOW|CHANDIGARH)/i\n  ]);\n  \n  const nationality = extractField([\n    /Nationality\\s*[:\\-]?\\s*([A-Z]+)/i,\n    /(INDIAN)/i\n  ]) || \"INDIAN\";\n  \n  const fatherName = extractField([\n    /Father'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Mother|Spouse|Address|Legal|Name\\s*of))/is,\n    /Name\\s*of\\s*Father\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Mother|Spouse|Address|Legal|Name\\s*of))/is,\n    /Father\\s*[:\\-]\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Mother|Spouse))/is,\n    /Father[:\\s]+([A-Z]+(?:\\s+[A-Z]+)*)/i,\n    /Father.*?([A-Z]{3,}(?:\\s[A-Z]{3,})+)/i\n  ]);\n  \n  const motherName = extractField([\n    /Mother'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Spouse|Address|Legal|Name\\s*of))/is,\n    /Name\\s*of\\s*Mother\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Spouse|Address|Legal|Name\\s*of))/is,\n    /Mother\\s*[:\\-]\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Spouse|Address))/is,\n    /Mother[:\\s]+([A-Z]+(?:\\s+[A-Z]+)*)/i,\n    /Mother.*?([A-Z]{3,}(?:\\s[A-Z]{3,})+)/i\n  ]);\n  \n  const spouseName = extractField([\n    /Spouse'?s?\\s*Name\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Address|Legal|Old|File))/is,\n    /Name\\s*of\\s*Spouse\\s*[:\\-]?\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Address|Legal|Old|File))/is,\n    /Spouse\\s*[:\\-]\\s*([A-Z][A-Z\\s]{2,}?)(?=\\s*(?:\\n|Address))/is,\n    /Spouse[:\\s]+([A-Z]+(?:\\s+[A-Z]+)*)/i,\n    /Spouse.*?([A-Z]{3,}(?:\\s[A-Z]{3,})+)/i\n  ]);\n  \n  const address = extractField([\n    /Address\\s*[:\\-]?\\s*(.*?PIN[:\\s]*\\d{6})/is,\n    /Address\\s*[:\\-]?\\s*(.*?)(?:\\n\\n|Legal|Old\\s*Passport)/is,\n    /Address\\s*[:\\-]?\\s*([A-Z0-9].*?(?:INDIA|\\d{6}))/is,\n    /((?:GRAM|VILLAGE|HOUSE|FLAT|PLOT).*?PIN[:\\s]*\\d{6})/is,\n    /((?:GRAM|VILLAGE|HOUSE|FLAT|PLOT).*?\\d{6})/is\n  ]);\n  \n  const oldPassportNumber = extractField([\n    /Old\\s*Passport\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i,\n    /Previous\\s*Passport\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i,\n    /Old\\s*P\\s*No\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i,\n    /Old\\s*PP\\s*No\\.?\\s*[:\\-]?\\s*([A-Z]\\d{7,8})/i,\n    /\\bOld[:\\s]+([A-Z]\\d{7,8})/i\n  ]);\n  \n  const fileNumber = extractField([\n    /File\\s*(?:No|Number)\\.?\\s*[:\\-]?\\s*([A-Z]{2,4}\\d{8,15})/i,\n    /File\\s*[:\\-]?\\s*([A-Z0-9]{10,15})/i,\n    /F\\.?\\s*No\\.?\\s*[:\\-]?\\s*([A-Z0-9]{10,15})/i,\n    /\\bFile[:\\s]+([A-Z0-9]{10,15})/i,\n    /\\b([A-Z]{2,3}\\d{10,12})\\b/\n  ]);\n  \n  return {\n    documentType: \"PASSPORT\",\n    passportNumber: passportNumber,\n    surname: surname,\n    givenName: givenName,\n    dateOfBirth: dateOfBirth?.replace(/[\\s.-]/g, '/'),\n    dateOfIssue: dateOfIssue?.replace(/[\\s.-]/g, '/'),\n    dateOfExpiry: dateOfExpiry?.replace(/[\\s.-]/g, '/'),\n    placeOfIssue: placeOfIssue,\n    nationality: nationality,\n    fatherName: fatherName,\n    motherName: motherName,\n    spouseName: spouseName,\n    address: address,\n    oldPassportNumber: oldPassportNumber,\n    fileNumber: fileNumber,\n    rawText: fullText\n  };\n}\n\n// =====================================================\n// 8. EXECUTION\n// =====================================================\nconst documentType = detectDocumentType(fullText);\nlet parsedData;\n\nswitch(documentType) {\n  case \"PASSPORT\":\n    parsedData = parsePassport(fullText);\n    break;\n  case \"PAN\":\n    parsedData = parsePAN(fullText);\n    break;\n  case \"VOTER\":\n    parsedData = parseVoter(fullText);\n    break;\n  case \"AADHAR\":\n    parsedData = parseAadhar(fullText);\n    break;\n  default:\n    parsedData = { documentType };\n}\n\nparsedData.status = \"success\";\nparsedData.message = `Detected ${parsedData.documentType}`;\n\nreturn { json: parsedData };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -112,
+        320
+      ],
+      "id": "0937b492-47fa-416b-809c-fb1f12769d2c",
+      "name": "Code in JavaScript1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.mistral.ai/v1/files",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "jLluIDhGgKO3fQrOCvmF1ZoaSu6UuXuA"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "purpose",
+              "value": "ocr"
+            },
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -960,
+        240
+      ],
+      "id": "908381c8-8729-43f0-80f7-7315dee4e758",
+      "name": "Upload file to mistral cloud",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "eABGGtR747BAsiPL",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://api.mistral.ai/v1/files/{{ $json.id }}/url",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "expiry",
+              "value": "24"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer $MISTRAL_API_KEY"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -752,
+        240
+      ],
+      "id": "34bc5728-8745-4f51-8199-4e33a1f795b3",
+      "name": "Get Signed URL",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "eABGGtR747BAsiPL",
+          "name": "Header Auth account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.mistral.ai/v1/ocr",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"mistral-ocr-2512\",\n  \"document\": {\n    \"type\": \"document_url\",\n    \"document_url\": \"{{ $json.url }}\"\n  },\n  \"table_format\": \"html\",\n  \"include_image_base64\": true\n} ",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -544,
+        240
+      ],
+      "id": "1542039c-3f54-4f92-8cca-8337cd1cc8c0",
+      "name": "HTTP Request1",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "eABGGtR747BAsiPL",
+          "name": "Header Auth account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Append row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Append row in sheet2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript2": {
+      "main": [
+        [
+          {
+            "node": "Upload file to mistral cloud",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript1": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upload file to mistral cloud": {
+      "main": [
+        [
+          {
+            "node": "Get Signed URL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Signed URL": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request1": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "04e59f31-9fcb-4af7-b5f3-baf715398e1f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6d6534f30e048fd49c2e558532a4108be1682e054d42ec875435ca73c70ef6de"
+  },
+  "id": "GQAIjrb273WM1n_bH0GIh",
+  "tags": []
+}
